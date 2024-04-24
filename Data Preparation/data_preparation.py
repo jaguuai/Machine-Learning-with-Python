@@ -11,10 +11,6 @@ import matplotlib.pyplot as plt
 #2-data preprocessing
 #2.1.data upload
 missing_data=pd.read_csv("missingValues.csv")
-# ***********data=pd.read_csv("data.csv")
-# #data preparation
-# height=data[["boy"]]
-# ***********# print(height)
 
 #2.1.missing values
 # sci-kit learn
