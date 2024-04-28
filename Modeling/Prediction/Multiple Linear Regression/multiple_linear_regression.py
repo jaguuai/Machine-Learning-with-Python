@@ -106,7 +106,7 @@ import statsmodels.api as sm
 X=np.append(arr=np.ones((22,1)).astype(int), values=new_data,axis=1)
 # Bir sutun içine dizi ekliyoruz 1 lerden oluşan yani bu dizi aslında denklemdeki beta0 dır
 
-X_list=new_data.iloc[:,[0,1,2,3,4,5,]].values
+X_list=new_data.iloc[:,[0,1,2,3,4,5]].values
 X_list=np.array(X_list,dtype=float)
 # En başta tamamını alıyoruz Çünkü hepsinin en bastakı p-values hesaplamak istiyoruz
 model=sm.OLS(height,X_list).fit()
@@ -123,3 +123,4 @@ X_list=new_data.iloc[:,[0,1,2,3]].values
 X_list=np.array(X_list,dtype=float)
 model=sm.OLS(height,X_list).fit()
 print(model.summary())
+
